@@ -18,7 +18,7 @@ function MovieCard({ movieId }) {
       <button
         onClick={() => toggleBookmark(movie.id)}
         className={`bookmark-btn ${movie.bookmarked ? 'bookmarked' : ''}`}
-        aria-label={movie.bookmarked ? 'הסר מסימניה' : 'הוסף לסימניה'}
+        aria-label={movie.bookmarked ? 'remove from bookmarks' : 'add to bookmarks'}
       >
         <Bookmark className={`bookmark-icon ${movie.bookmarked ? 'filled' : ''}`} />
       </button>
